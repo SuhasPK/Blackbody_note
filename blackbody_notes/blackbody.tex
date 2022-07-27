@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage[english]{babel}
+\pagenumbering{arabic}
+\usepackage{tgadventor}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\textbf{\underline{Introduction to Blackbody radiation}}}
+\author{Suhas. P. K}
+
+
+\date{}
+
+\begin{document}
+\maketitle
+
+
+\section*{\underline{Introduction}}
+\vspace{0.2cm}
+\textbf{Heat} is a form of energy and can be transferred from one point to another by means of three methods namely, conduction, convection, and radiation.
+\textbf{Radiation} is a process of transference of heat from onr point to another without the aid of any intervening medium or without affecting the intervening medium if any. All bodies at all temperatures are capable of emitting heat. The heat emitted by radiation from abody due to its temperature is called \textbf{thermal radiation}.
+\\
+In this document we are going to discuss some key concepts related to blackbody radiation. The key topics that we will be discussing are: 
+\begin{enumerate}
+	\item Properties of thermal radiation
+	\item Important definitions needed to understand radiation
+	\item Laws of radiation
+	\begin{enumerate}
+		\item Kirchhoff's law
+		\item Stefan's law
+	\end{enumerate}
+	\item Fery's blackbody
+	\item Energy distribution in blackbody radiation
+	\item Wien's law
+	\item Rayleigh-Jean's law
+	\item Planck's hypothesis and quantum theory
+	\item To deduce Wien's law from Planck's law
+	\item To deduce Rayleigh-Jean's law from Planck's law
+\end{enumerate}  
+
+\newpage
+
+\section{\underline{Properties of thermal radiation}}
+Thermal radiation exhibits the following properties:
+\begin{enumerate}
+	\item They travel in straight lines.
+	\item They do not require any materialmedium for their propagation.
+	\item They travel equally in all directions, in a homogeneous medium.
+	\item They travel with speed of light.
+	\item They obey inverse square law.
+	\item They exhibit the phenomenon of reflection and refraction.
+	\item The exhibit the phenomenon of interference diffraction and polarization.
+	\item When they fall on matter, heat is developed.
+	\item They are electromagnetic waves having wavelength greater than that of visible region.
+\end{enumerate}
+
+\section{\underline{Important definitions }}
+\begin{enumerate}
+	\item \textbf{Monochromatic emissive power}: Monochromatic emissive power ($e_{\lambda}$) of a body at a temperature ($T$) for wavelength ($\lambda$) is defined as the energy radiated, in vaccum, per unit time, per unit area and per unit range around wavelength i.e., lying between $\lambda-\frac{1}{2}$ to $\lambda+\frac{1}{2}$. For a body, $e_{\lambda}$ will be different for different values of $\lambda$ and for different values of $T$.
+	\item \textbf{Emissive power}: Emissive power ($E$) of a body at a temperature $T$ is defined as the total amount of energy for all wavelenghts, radiated per unit time, per unit area of the body.
+	\\
+	If $dE$ is the amount of energy radiated per second per unit area for wavelength $d\lambda$, then
+	\begin{equation}
+		dE = e_{\lambda}d\lambda
+	\end{equation}
+	The emissive power $E$, is given by
+	\begin{equation}
+		E = \int_{0}^{\infty} e_{\lambda}d\lambda,
+	\end{equation}
+	measured in the units of $Jm^{-2}s^{-1}$.
+	
+	\item \textbf{Spectral energy density}: Spectral energy density $u_{\lambda}$ at any point, is defined as the radiant energy per unit volume, around the point, for wavelengths lying in a unit range around $\lambda$ i.e., in between $\lambda-\frac{1}{2}$ to $\lambda+\frac{1}{2}$.
+	\item \textbf{Total energy density}: Total enegy density $u$ at any point is defined as teh radiant energy per unit volume, around the point for all wavelengths taken together
+	\begin{equation}
+		u = \int_{0}^{\infty} u_{\lambda}d\lambda
+	\end{equation}
+	
+	\item \textbf{Monochromatic absorptive power}: Monochromatic absorptive power $a_{\lambda}$ of a body at temperature $T$ for a wavelength $\lambda$ is defined as the ratio of amount of radiation absorbed by the surface in a given interval of time to the total amount of ratiation falling upon the surface in that same time for wavelenght lying in a unit range around $\lambda$ i.e., in between $\lambda-\frac{1}{2}$ to $\lambda+\frac{1}{2}$.
+	\item \textbf{Absorptive power}: Absorptive power $a$ of a body at temperature $T$ is defined as the ratio of the amount of radiation absorbed on the surface in a given interval of time to the total amount of the radiation falling on the surface in the same time, for all wavelengths,
+	\begin{equation}
+		a = \int_{0}^{\infty}a_{\lambda}d\lambda
+	\end{equation}
+	
+\end{enumerate}
+	
+\section{\underline{Laws of radiation}}
+\begin{enumerate}
+	\item \textbf{Kirchhoff's law}: \textit{"The ratio of the emissive power to the absorptive power is the same for all surfaces at the same temperature and is equal to the emissive power of a perfect blackbody at that temperature"}.
+	\\
+	If $e_{\lambda}$ and $a_{\lambda}$ represent the emissive power and absorptive power of a given surface, $E_{\lambda}$ and $A_{\lambda}$ the corresponding values for perfect black surface at the same temperature,
+	then according to the law,
+	$\frac{e_{\lambda}}{a_{\lambda}} = \frac{E_{\lambda}}{A_{\lambda}}$.
+	\\
+	But $A_{\lambda}$ for a perfectly blackbody is unity. Hence, $\frac{e_{\lambda}}{a_{\lambda}} = E_{\lambda} $ where, $E_{\lambda}$ is some function of $\lambda$ annd $T$.
+\end{enumerate}
+
+\end{document}
+
