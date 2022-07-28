@@ -1,6 +1,7 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[14pt,a4paper]{article}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{amsmath}
 \usepackage{geometry}
  \geometry{
@@ -9,11 +10,22 @@
  left=20mm,
  top=20mm,
  }
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\graphicspath{ {./images/} }
+%\usepackage[sfdefault]{universalis}
+%\usepackage[T1]{fontenc}
+
 \usepackage[english]{babel}
 \pagenumbering{arabic}
-\usepackage{tgadventor}
+\usepackage{ae,aecompl}
+\usepackage{fancyhdr}
 
-
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Blackbody radiation}
+\rfoot{Page \thepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{\textbf{\underline{Introduction to Blackbody radiation}}}
@@ -42,7 +54,7 @@ In this document we are going to discuss some key concepts related to blackbody 
 	\end{enumerate}
 	\item Fery's blackbody
 	\item Energy distribution in blackbody radiation
-	\item Wien's law
+	\item Wien's distribution law
 	\item Rayleigh-Jean's law
 	\item Planck's hypothesis and quantum theory
 	\item To deduce Wien's law from Planck's law
@@ -55,7 +67,7 @@ In this document we are going to discuss some key concepts related to blackbody 
 Thermal radiation exhibits the following properties:
 \begin{enumerate}
 	\item They travel in straight lines.
-	\item They do not require any materialmedium for their propagation.
+	\item They do not require any material medium for their propagation.
 	\item They travel equally in all directions, in a homogeneous medium.
 	\item They travel with speed of light.
 	\item They obey inverse square law.
@@ -103,7 +115,116 @@ Thermal radiation exhibits the following properties:
 	$\frac{e_{\lambda}}{a_{\lambda}} = \frac{E_{\lambda}}{A_{\lambda}}$.
 	\\
 	But $A_{\lambda}$ for a perfectly blackbody is unity. Hence, $\frac{e_{\lambda}}{a_{\lambda}} = E_{\lambda} $ where, $E_{\lambda}$ is some function of $\lambda$ annd $T$.
+
+\subsection{\textbf{Note}:}
+\begin{enumerate}
+	\item Though it is proved for a body inside an enclosure, it is valid for all bodies under all conditions for pure temperature radiations, since the absorptive and emissive powers of a body depends only on the nature of the surface and is independent of the surroundings.
+	\item $\frac{e_{\lambda}}{a_{\lambda}}$ is a constant for all kinds of surfaces for given temperature and wavelength.
+	\item Since $\frac{e_{\lambda}}{E_{\lambda}} = a_{\lambda}$, it follows that, emissivity of a surface is equa; to its absorptive power.
+	\item Since, $E_{\lambda}$ for a given temperature is constant, $e_{\lambda}=a_{\lambda}$, i.e., emissive power varies as the absorptive power and hence, good emitters must also be a good absorbers.
+	\item If $a_{\lambda}$ is a constant for all wavelengths then  $\frac{e_{\lambda}}{E_{\lambda}}$ is a constant, then the body is called a \textbf{gray body}.
+	\item A small hole in the wall of a constant temperature enclosure acts as aperfect absorber as well as a good emitter of radiation.
 \end{enumerate}
 
+    \item \textbf{Stefan's law}:  \textit{"The amount of radiant energy emitted per second per unit area of a surface of a blackbody is directly proportional to the fourth power of its absolute temperature."}
+    \begin{equation}
+        E \propto T^{4}
+    \end{equation},
+    where, $E$ is the radiant energy emitted per second per unit area of the blackbody, and $T$ is the absolute temperature of the body.\\
+    The above equation can be written of the form,
+    \begin{equation}
+        E = \sigma T^{4}
+    \end{equation}
+    where $\sigma = 5.678 \times 10^{-8} Wm^{-2}K^{-4}$.\\
+    The proportionality constant introduced in the above equation is called \textbf{stefan's constant}.\\
+    Later by combining with theoretical aspect, the law was modified by Boltzmann.\\
+    If a blackbody $B_{1}$ at temperature $T_{1}$ is surrounded by another blackbody $B_{2}$ at temperature $T_{2}$, where $T_{1}>T_{2}$, then the net amount of energy emitted per second per unit area of a blackbody $B_{1}$ is given by
+    \begin{equation}
+        E = \sigma(T^{4}_{1} - T^{4}_{2})
+    \end{equation}
+    This is known as \textbf{Stefan-Boltzmann's law}.
+\end{enumerate}
+
+\section{\underline{Blackbody}}
+\begin{wrapfigure}{r}{0.28\textwidth} %this figure will be at the right
+    \centering
+    \includegraphics[scale=0.29]{blackbody.png}
+\end{wrapfigure}
+
+
+A blackbody is one which absorbs all the radiation (corresponding to all wavelengths) that falls on it. It also emits all radiations when maintained at constant temperature. Such radiations are called blackbody radiations.
+\\
+In practice, a perfect blackbody is not available. the type of perfect blackbody devised by Fery is shown. It consists of a hallow, double walled copper sphere, coated with lamp black on its inner surface. It has a fine hole on one side and a conical projection just opposite the hole on the other side. When radiations enter the hole, they suffer multiple reflections and are completely absorbed. This body acts as blackbody absorber. When this body is placed in a heat bath at a constant temperature then the heat radiations will come out of the hole. Then the hole acys like a blackbody radiator. It should be remembers that only the hole and not the walls of the body acts as a blackbody radiator.
+
+\newpage
+\section{\underline{Energy distribution curve}}
+
+Blackbody emits all radiations when maintained at constant temperature. The distribution of energy in a blackbody radiation for different wavelengths and at various temperatures was determined experimentally by Lummer and Pringshiem in 1899. A graph of intensity $E_{\lambda}$ and wavelength $\lambda$ was plotted at different temperatures. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[keepaspectratio=true,scale=0.22]{blackbody_curve.jpg}
+\end{figure}
+
+\subsection{\textbf{Observations}}
+\begin{enumerate}
+    \item Blackbody emits all types of radiations ranging from lower wavelength to higher wavelenght.
+    \item The energy is not distributed uniformly among the wavelengths.
+    \item At a given temperature the intensity of radiation increase with increase in wavelength and becomes maximum at a particular wavelength ($\lambda_{m}$). By farther increasing the wavelength, the intensity of radiation decreases.
+    \item The wavelength ($\lambda_{m}$) corresponding to maximum intensity get shifted towards lower wavelengths with increase of temperature.
+    \item Energy emitted due to all wavelengths increasing with increase in temperature.\\
+    (This is in accordance with \textbf{Stefan-Boltzmann's law})
+\end{enumerate}
+\newpage
+\section{\underline{Wien's distribution law}}
+    \subsection{\textbf{Wien's displacement law}} \textit{"The wavelength $\lambda_{m}$ corresponding to maximum intensity of emission of blackbody radiation is inversely proportional to the absolute temperature $T$ of the body emitting radiation."}
+    \begin{equation*}
+        \lambda_{m} \propto \frac{1}{T}
+    \end{equation*}
+    or
+    \begin{equation}
+        \lambda_{m} = \frac{b}{T}
+    \end{equation}
+    where,  $b = 2.898 \times 10^{3} mK$.
+This is called the \textbf{displacement law} because the maximum intensity of radiation emitted by a blackbody gets shifted towards shorter wavelength side with increase in teperature of the body.
+    \subsection{\textbf{Fifth power law}}  \textit{"The maximum energy $E_{m}$ of the peak emission is directly proportional to the fifth power of absolute temperature of the blackbody."}
+    \begin{equation*}
+        E_{m} \propto T^{5}
+    \end{equation*}
+    or
+    \begin{equation}
+        E_{m} = (constant)T^{5}
+    \end{equation}
+Combining the two laws, the energy density of radiation in the wavelength range $\lambda$ and $\lambda+d\lambda$ as
+    \begin{equation}
+        E_{\lambda} = (constant)\lambda^{5} f(\lambda,T) 
+    \end{equation}
+This is called \textbf{Wien's distribution law}. It explains only the increasing part of the curve, in the shorter wavelength region but failed to explain the decreasing part of the curve, the higher wavelength region.
+
+\section{\underline{Rayleigh-Jean's law}} 
+Wien's distribution law failed in explaining the decreasing part of the energy distribution curve, Lord Rayleigh, therefore, sought to determine its form on the basis of classical ideas and was later developed by Jean. According to them the energy  density of the blackbody radiation within the wavelength range $\lambda$ and $\lambda+d\lambda$ is 
+\begin{equation}
+    E_{\lambda} = 8\pi kT\lambda^{-4}d\lambda
+\end{equation}
+This is called \textbf{Rayleigh-Jean's law} of energy distribution of blackbody radiation. This agrees well with the experimental results in the longer wavelength region nut fails in the shorter wavelength region.
+\subsection{The Ultraviolet catastrophe}
+According to the Rayleigh-Jean's law, the energy density is given by,
+\begin{equation*}
+    E_{\lambda} = 8\pi kT\lambda^{-4}d\lambda
+\end{equation*}
+The energy density of blackbody radiation will continiously increase with the decrease of wavelength an approaches infinity with the $\lambda \rightarrow 0 $. This shows that all the thermal energy in the universe will manifest itself in the form of short wavelengths. This is against to the experimental observations. This fatal objection to the Rayleigh-Jean's law at shorter wavelength is known as the \textbf{ultraviolet catastrophe}. The concept led classical physics to fail.
+\newpage
+\section{\underline{Planck's hypothesis and quantum theory}}
+In order to explain the distribution of energy in the spectrum of blackbody over the entire range of wavelengths, Max Planck proposed a quantum theory of radiation in 1901. It is based on these following assumptions:
+\begin{enumerate}
+    \item The chamber which emits radiation is assumed to consists of large number of oscillators, each having its own natural frequency.
+    \item These oscillators cannot emit or absorb energy continiously.
+    \item Radiation iis absorbed or emitted by oscillators in discrete packets of energy called  \textbf{quanta}. Energy of each quantum is $E = h\nu$, where $h = 6.626 \times 10^{-34} Js$ is called the \textbf{planck's constant} and $\nu$ is the frequency of the radiation emitted or absorbed. Thus, the energy of an oscillator may be $h\nu$, $2h\nu$, $3h\nu$ $\cdots$ or $nh\nu$, where $n$ is an integer.
+    \\
+    \textbf{The Planck's law of radiation.}
+    \begin{equation}
+        E_{\lambda} d\lambda = \frac{8\pi hc}{\lambda^{5}} \left( \frac{1}{e^{\frac{hc} {kT \lambda} -1 } }  \right)d\lambda
+    \end{equation}
+\end{enumerate}
 \end{document}
+
 
